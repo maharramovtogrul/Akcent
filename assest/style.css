@@ -1,10 +1,11 @@
 .container {
   width: 100%;
   height: 5%;
+  position: fixed;
 }
 
 .container .bdc-icon {
-  margin: 5% 0 0 5%;
+  margin: 5% 0 0 25%;
 }
 
 .container .bdc-icon a {
@@ -16,7 +17,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2% 15% 0 15%;
+  margin: 2% 5% 0 25%;
 }
 
 .container .navbar a {
@@ -41,5 +42,73 @@
 
 .container .navbar .person svg {
   margin: 0 0 20% 18%;
+}
+
+#first {
+  width: 100%;
+}
+
+#first .container {
+  width: 100%;
+  height: 500px;
+  margin: 70px 0 0 50px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+#first .mechti {
+  width: 100%;
+  margin: 10% 0 0 10%;
+}
+
+#first .mechti h1 {
+  width: 80%;
+  font-size: 4rem;
+}
+
+#first .mechti p {
+  width: 80%;
+  margin-top: 10px;
+}
+
+#first .mechti button {
+  width: 200px;
+  border-radius: 40px;
+  background-color: orange;
+  font-weight: 500;
+  border: none;
+  margin-top: 10px;
+}
+
+#first .social-icons {
+  margin: 5% 0 0 70%;
+}
+
+#first .social-icons a {
+  text-decoration: none;
+  color: gray;
+}
+
+#first .social-icons .fb:hover, #first .social-icons .linkedin:hover {
+  color: #003cff;
+}
+
+#first .social-icons .inst:hover {
+  color: rgba(163, 4, 57, 0.986);
+}
+
+#first .social-icons .youtube:hover {
+  color: red;
+}
+
+#first .social-icons .whatsapp:hover {
+  color: green;
+}
+
+#first .picture img {
+  width: 85%;
+  height: 400px;
+  margin: 30px 0 0 30px;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */
