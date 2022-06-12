@@ -1,3 +1,4 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
 .container {
   width: 100%;
   height: 5%;
@@ -18,6 +19,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 2% 5% 0 25%;
+  font-family: "Gotham", sans-serif;
 }
 
 .container .navbar a {
@@ -25,12 +27,12 @@
   color: black;
 }
 
-.container .navbar .language {
-  border: 1px solid;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  font-size: small;
+.container .navbar #lang {
+  background-color: #F3F3F3;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0 4px;
+  font-size: 15px;
 }
 
 .container .navbar .person {
@@ -81,7 +83,7 @@
 }
 
 #first .social-icons {
-  margin: 5% 0 0 70%;
+  margin: 2% 0 0 70%;
 }
 
 #first .social-icons a {
@@ -94,7 +96,7 @@
 }
 
 #first .social-icons .inst:hover {
-  color: rgba(163, 4, 57, 0.986);
+  color: rgba(190, 3, 65, 0.986);
 }
 
 #first .social-icons .youtube:hover {
@@ -102,13 +104,23 @@
 }
 
 #first .social-icons .whatsapp:hover {
-  color: green;
+  color: #01a001;
 }
 
 #first .picture img {
   width: 85%;
   height: 400px;
-  margin: 30px 0 0 30px;
+  margin: 20px 0 0 30px;
   border-radius: 15px;
+}
+
+#first .picture .ellips {
+  text-align: center;
+}
+
+#first .picture .ellips img {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
