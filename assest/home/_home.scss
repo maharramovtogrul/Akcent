@@ -1,7 +1,9 @@
-.container{
+
+.container-fluid{
     width: 100%;
-    height: 5%;
-    position: fixed;
+    height: 10%;
+    padding: 0 5%;
+
     
     .bdc-icon{
         margin: 5% 0 0 25%;
@@ -29,6 +31,7 @@
            border-radius: 4px;
            padding: 0 4px;
            font-size: 15px;
+           cursor: pointer;
        }
 
        .person{
@@ -46,12 +49,13 @@
 
 #first{
     position: relative;
-    .container{
+    padding: 0 2%;
+    .container-fluid{
         width: 100%;
-        height: 750px;
-        margin: 70px 0 0 20px;
+        height: 550px;
         background-color: lightgrey;
         border-radius: 10px;
+        margin-top: 10px;
     }
     
     .mechti{
@@ -75,11 +79,11 @@
         .ellipses{
             img{
                 width: 40px;
-                @include absolut(58px,0,0,75px);
+                @include absolut(63px,0,0,155px);
             }
         }
          .arrowright{
-             @include absolut(65px,0,0,325px);
+                 @include absolut(68px,0,0,410px);
              img{
                  width: 30px;
              }
@@ -91,26 +95,28 @@
           }
 
           p{
-            width: 80%;
+            width: 450px;
             margin-top: 10px;
           }
         
           button{
             width: 200px;
+            height: 70px;
             border-radius: 40px;
             background-color: $color_yellow;
             font-weight: 800;
             border: none;
             margin-top: 10px;
-            padding: 5px;
+            padding:0 15px;
           }
     }
 
     .social-icons{
-        margin: 2% 0 0 70%;
+        margin: 2% 0 0 65%;
         a{
             text-decoration: none;
             color: gray;
+            margin-left: 5px;
         }
 
         .fb:hover, .linkedin:hover{
@@ -130,48 +136,81 @@
 
     .picture{
         img{
-            width: 85%;
-            height: 400px;
-            margin: 0 0 0 0;
+            width: 90%;
+            height: 450px;
+            margin: 20px 0 0 0;
             border-radius: 15px;
         }
 
-        // .input{
-        //     text-align: center;
-        //     input{
-        //         margin-left: 10px;
-        //     }
-        // }
-        .swiper {
-            width: 100%;
-            height: 100%;
-          }
-    
-          .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-    
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-          }
-    
-          .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
     }
+
+    
+}
+
+#about{
+    margin-top: 50px;
+    margin-left: 10%;
+
+   .kurslarhaqqda{
+    margin-left: 20px;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: $color_black;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 400;
+        width: 70%;
+        color: $color_black;
+    }
+   }
+
+    .aboutcourses{
+        
+        .top,.bottom{
+            display: flex;
+            text-align: center;
+            
+            div{
+                border: 1px solid;
+                width: 12%;
+                height: 50px;
+                margin: 10px 0 0 20px;
+                padding: 10px 0 0 0;
+                border-radius: 30px;
+                &:hover{
+                    background-color: $color_yellow;
+                    border: none;
+                }
+                
+            }
+           
+            a{
+                text-decoration: none;
+                color: $color_black;
+                font-size: 15px;
+                font-weight: 700;
+                
+            }
+        }
+    }
+
+    .niyedizayn{
+        margin: 10px 0 0 80px;
+        h2{
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: $color_black;
+        }
+    
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            width: 70%;
+            color: $color_black;
+        }
+    }
+
 }
